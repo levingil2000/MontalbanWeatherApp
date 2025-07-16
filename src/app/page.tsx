@@ -22,7 +22,9 @@ const getWeatherCardColor = (weatherCode: string): string => {
   const code = weatherCode.toLowerCase();
 
   // Conditional logic to return different Tailwind background color classes
-  if (code.includes("rain") || code.includes("showers") || code.includes("drizzle")) {
+  if (code.includes("heavy")) {
+    return "bg-red-700"; // A darker blue for rain
+  } else if (code.includes("rain") || code.includes("showers") || code.includes("drizzle")) {
     return "bg-blue-700"; // A darker blue for rain
   } else if (code.includes("cloudy") || code.includes("overcast") || code.includes("fog")) {
     return "bg-slate-700"; // A darker gray for clouds/overcast
@@ -70,7 +72,7 @@ export default function Home() {
       {/* Centered content area with a maximum width */}
       <div className="max-w-4xl mx-auto">
         {/* Main title of the dashboard */}
-        <h1 className="text-7xl font-extrabold mb-8 text-center drop-shadow-lg">
+        <h1 className="text-4xl font-extrabold mb-8 text-center drop-shadow-lg">
           The Montalban School Forecast
         </h1>
         {/* Subtitle providing more context */}
