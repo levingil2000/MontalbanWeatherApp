@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+The Montalban School Forecast
+Stay Informed, Stay Safe. Your School's Daily Weather Update.
 
-## Getting Started
+This web application provides hourly weather forecasts specifically tailored for public schools in Montalban, Rizal. It aims to help students, teachers, and school staff stay informed about local weather conditions, promoting safety and preparedness throughout the school day.
 
-First, run the development server:
+✨ Features
+Hourly Forecasts: View detailed weather information for each hour, including temperature, precipitation, and weather conditions.
 
-```bash
+School Selection: Easily switch between different public schools in Montalban to view their respective forecasts.
+
+Dynamic Weather Cards: Weather forecast cards change color based on the current weather condition (e.g., sunny, cloudy, rainy) for quick visual cues.
+
+Responsive Design: Optimized for viewing on various devices, from mobile phones to desktop computers.
+
+Clean & Intuitive Interface: A user-friendly design built with modern web technologies.
+
+🚀 Technologies Used
+Next.js: A React framework for building fast and scalable web applications.
+
+React: A JavaScript library for building user interfaces.
+
+Tailwind CSS: A utility-first CSS framework for rapid UI development.
+
+TypeScript: For type-safe JavaScript development.
+
+Local API Endpoint: Fetches weather data from a /api/weather endpoint (assumed to be part of the Next.js backend).
+
+🛠️ Setup and Installation
+Follow these steps to get the project up and running on your local machine.
+
+Prerequisites
+Node.js (LTS version recommended)
+
+npm or Yarn
+
+Installation Steps
+Clone the repository:
+
+git clone <your-repository-url>
+cd <your-project-folder>
+
+(Replace <your-repository-url> and <your-project-folder> with your actual repository details.)
+
+Install dependencies:
+
+npm install
+# or
+yarn install
+
+Run the development server:
+
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This will start the development server at http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🖥️ Usage
+Once the development server is running:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open your web browser and navigate to http://localhost:3000.
 
-## Learn More
+Use the "Select a School" dropdown to choose a public school in Montalban.
 
-To learn more about Next.js, take a look at the following resources:
+The weather forecast cards will update to display hourly conditions for the selected school, with colors dynamically changing based on the weather.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+📂 Project Structure (Key Files)
+.
+├── app/
+│   ├── page.tsx          # Main application page (where the UI and logic reside)
+│   ├── api/              # API routes (e.g., weather data fetching)
+│   │   └── weather/route.ts
+│   └── globals.css       # Global styles, including Tailwind CSS imports
+├── public/               # Static assets (images, etc.)
+├── tailwind.config.js    # Tailwind CSS configuration
+├── tsconfig.json         # TypeScript configuration
+└── package.json          # Project dependencies and scripts
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🤝 Contributing
+Contributions are welcome! If you have suggestions for improvements or new features, please feel free to:
 
-## Deploy on Vercel
+Fork the repository.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Create a new branch (git checkout -b feature/your-feature-name).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Make your changes and commit them (git commit -m 'Add new feature').
+
+Push to the branch (git push origin feature/your-feature-name).
+
+Open a Pull Request.
+
+📄 License
+This project is open-sourced under the MIT License.
