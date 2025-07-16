@@ -77,7 +77,7 @@ export default function Home() {
         </h1>
         {/* Subtitle providing more context */}
         <p className="text-xl font-semibold text-center text-gray-600 mb-12">
-          Stay Informed, Stay Safe. Your School's Daily Weather Update.
+          Stay Informed, Stay Safe. Your School&apos;s Daily Weather Update.
         </p>
 
         {/* School selection dropdown section */}
