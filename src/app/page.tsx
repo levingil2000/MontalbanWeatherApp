@@ -80,7 +80,7 @@ export default function Home() {
           Stay Informed, Stay Safe. Your School&apos;s Daily Weather Update.
         </p>
         <p className="text-xl font-semibold text-center text-gray-600 mb-12">
-          August 6, 2025 Forecast data from Tomorrow.io
+          August 7, 2025 Forecast data from Tomorrow.io
         </p>
 
         {/* School selection dropdown section */}
